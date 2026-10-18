@@ -17,6 +17,19 @@ An [OpenAI plugin ZIP](https://github.com/ThatCompany/agent-medici-innovation-sk
 
 ## Use the Codex edition
 
+### Install directly from GitHub
+
+Paste this request into Codex to install the published v0.1.0 edition:
+
+```text
+Use $skill-installer to install:
+https://github.com/ThatCompany/agent-medici-innovation-skill/tree/v0.1.0/editions/codex/skills/medici-exploration
+```
+
+Then invoke `$medici-exploration`. The versioned URL pins this installation to v0.1.0. Installation creates a local copy; future GitHub changes do not automatically update it.
+
+### Install from a ZIP
+
 1. Download the **Codex skill ZIP** above and extract its `medici-exploration` folder.
 2. Put that folder in your user skill directory, `~/.agents/skills/`, or a repository's `.agents/skills/` directory.
 3. In Codex, invoke `$medici-exploration`. Newly installed skills are detected automatically; restart Codex if it does not appear.
