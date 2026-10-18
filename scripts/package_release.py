@@ -64,7 +64,7 @@ def main():
         assert manifest["version"] == args.version, "Claude plugin manifest version mismatch"
         assert manifest["license"] == "MIT"
         root = manifest["name"] + "/"
-        plugin = output / f"{manifest['name']}-claude-code-v{args.version}.zip"
+        plugin = output / f"{manifest['name']}-claude-plugin-v{args.version}.zip"
         plugin_entries = {root + path.relative_to(edition).as_posix(): path for path in edition.rglob("*")
                           if path.is_file() and "__pycache__" not in path.parts and path.suffix != ".pyc"}
         plugin_entries[root + "LICENSE"] = license_path

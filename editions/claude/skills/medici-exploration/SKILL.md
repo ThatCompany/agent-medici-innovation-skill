@@ -2,7 +2,7 @@
 name: medici-exploration
 description: Explore an idea, code project or design decision through randomly drawn perspectives, current evidence and small experiments. Use when asked, or when distinct framings could change a decision.
 license: MIT
-compatibility: Claude edition for Claude Code and Claude.ai. Claude Code supplies subagents, AskUserQuestion, web tools and a shell for the draw helper. Claude.ai needs code execution for the helper; without separate agent contexts, perspectives run sequentially and are disclosed as simulated.
+compatibility: Claude edition for Claude Code, Cowork and chat in Claude.ai. Claude Code and Cowork supply subagents, a shell for the draw helper and, where allowed, AskUserQuestion and web tools. Chat needs code execution for the helper; without separate agent contexts, perspectives run sequentially and are disclosed as simulated.
 ---
 
 # Medici Exploration
@@ -49,7 +49,7 @@ The provisional single-panel default is seven logical participants:
 
 A narrow run may combine practice investigation with coordination for six; record it. Keep facilitation separate to claim independent facilitation. Add seats only for a named gap that could change the next action, one at a time within the ceiling; eight is a normal single-panel planning ceiling. Verification or specialist gaps can justify an addition. Beyond that, consider separate decisions. These counts are design defaults, not measured optima; honor explicit user composition and limits.
 
-The facilitator reads the [standing pool](references/perspective-pool.json), records the question, constraints, fixed assignments, ceiling and coordinator perspective, and administers the [draw helper](scripts/draw_perspectives.py) under its charter. Keep the version, fingerprint, seed and allocation. No convenient rerolls, substitutions or mid-draw pool changes. Reveal families and selection rationale. Preserve an inapplicable lens and explain the mismatch; do not remove it from coverage accounting. Pool revisions are visible changes with the user and preserve earlier versions.
+The facilitator reads the [standing pool](references/perspective-pool.json), records the question, constraints, fixed assignments, ceiling and coordinator perspective, and administers the [draw helper](scripts/draw_perspectives.py) under its charter. In Claude Code and Cowork its full path is `${CLAUDE_SKILL_DIR}/scripts/draw_perspectives.py`. Keep the version, fingerprint, seed and allocation. No convenient rerolls, substitutions or mid-draw pool changes. Reveal families and selection rationale. Preserve an inapplicable lens and explain the mismatch; do not remove it from coverage accounting. Pool revisions are visible changes with the user and preserve earlier versions.
 
 Use subagents for independent contributions and respect runtime capacity; batch work when needed. Honor requests for fresh participants. The coordinator may execute tools for a facilitator if necessary, retaining its request and result. If subagents are unavailable, disclose sequential lens work as simulated; do not claim independent-agent coverage. The host guide maps these duties onto the tools each Claude surface provides.
 
