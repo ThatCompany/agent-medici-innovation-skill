@@ -9,7 +9,7 @@
     {
       "name": "agent-medici-innovation",
       "source": "./editions/claude",
-      "description": "Explore ideas, code projects and design decisions through independently facilitated, randomly drawn perspectives, current evidence and small experiments.",
+      "description": "Put your idea where disciplines collide. A facilitated panel of randomly drawn perspectives, grounded in current evidence, turns an idea, design or code decision into one small experiment worth running.",
       "version": "0.1.1",
       "category": "productivity",
       "homepage": "https://github.com/ThatCompany/agent-medici-innovation-skill",
