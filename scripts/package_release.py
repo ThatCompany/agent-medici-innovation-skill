@@ -72,10 +72,11 @@ def main():
         built.append(plugin)
 
     checksums = output / "SHA256SUMS.txt"
-    checksums.write_text("".join(
+    # Write bytes so Windows text mode cannot turn the LF line endings into CRLF.
+    checksums.write_bytes("".join(
         hashlib.sha256(path.read_bytes()).hexdigest() + "  " + path.name + "\n"
         for path in built
-    ), encoding="utf-8")
+    ).encode("utf-8"))
     print(json.dumps({"archives": [path.name for path in built],
                       "checksums": checksums.name,
                       "archive_bytes_match_sources": True}, indent=2))
