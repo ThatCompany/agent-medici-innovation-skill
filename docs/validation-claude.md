@@ -42,6 +42,15 @@ Departures, all recorded in the delivery: contributors started before the facili
 
 These findings changed `references/claude-hosts.md` before release. It now tells roles to report only to the coordinator, explains how to continue a role and treat duplicate reports, asks for the facilitator's packet check before dispatch, and says which facilitator turns to merge under a small ceiling. It also gives the Windows interpreter order with an absolute helper path, and covers the researcher's scope in a closed hypothetical. The revised guide has not been re-run. The coordinator and facilitator alone used about 263,000 tokens; the other subagents were not totaled.
 
+## Account install test
+
+On 2026-10-18 the plugin was installed on a Max account through claude.ai in Chrome, following the README:
+
+- **Customize > Plugins > Add** offered Add marketplace, Upload plugin, Create a plugin and Create with Claude. **Add marketplace** then asked for a source: Browse Anthropic sources, or **Add from repository**. The repository field accepted `ThatCompany/agent-medici-innovation-skill`; it also lists repositories from a connected GitHub account. The dialog warns that Anthropic does not verify marketplace plugins, and **Sync automatically** was on by default.
+- After **Sync**, the list showed **Agent medici innovation**, "by agent-medici-innovation-skill". **Add** installed it as version 0.1.1 with one skill and 13 files, marked "Synced from a repository · read-only".
+- In a new chat, typing `/medici` listed **medici-exploration** with its description, labeled "Agent medici innovation plugin". Nothing was sent, so the skill did not run.
+- Cowork and the Claude Code account sync were not observed. Cowork fetches account plugins when a task starts, and Claude Code at its next session start.
+
 ## Limits
 
-Installing through Claude.ai, the desktop app or Cowork was not exercised; those install paths, the description limits and the frontmatter key list come from Anthropic's documentation, checked on 2026-10-18. No run in chat, Cowork or the API took place, and `${CLAUDE_SKILL_DIR}` substitution was not observed directly. No real users took part. Creative outcomes and latency were not measured, and token use was only partly counted. As with the Codex edition, separate contexts provide procedural separation, not technical isolation, and a demonstration is not evidence that a panel beats a capable single agent.
+Installing through the desktop app, Upload plugin or organization settings was not exercised; those paths, the description limits and the frontmatter key list come from Anthropic's documentation, checked on 2026-10-18. The skill has not run in chat, Cowork or the API, and `${CLAUDE_SKILL_DIR}` substitution was not observed directly. No real users took part. Creative outcomes and latency were not measured, and token use was only partly counted. As with the Codex edition, separate contexts provide procedural separation, not technical isolation, and a demonstration is not evidence that a panel beats a capable single agent.
