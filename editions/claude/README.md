@@ -9,11 +9,12 @@ Pick where you use Claude. Adding the plugin once on claude.ai or in the desktop
 ### Claude.ai, the desktop app and Cowork
 
 1. Open **Customize > Plugins**.
-2. Select **Add > Add marketplace** and enter `ThatCompany/agent-medici-innovation-skill`.
-3. Find **agent-medici-innovation** in the list and add it.
-4. For chat, turn on **Code execution and file creation** in Settings > Capabilities.
+2. Select **Add > Add marketplace**, then **Add from repository**.
+3. Enter `ThatCompany/agent-medici-innovation-skill` and select **Sync**. Leave **Sync automatically** on to get new versions.
+4. Find **Agent medici innovation** in the list and select **Add**.
+5. For chat, turn on **Code execution and file creation** in Settings > Capabilities.
 
-The plugin is saved to your account. It then works in chat on the web, desktop and mobile apps, in Cowork tasks, and in Claude Code when you sign in with the same account. To use it, ask Claude to use the Medici exploration method, or type `/` and choose it. To get a newer version, select **Check for updates** on the marketplace, or turn on **Sync automatically**.
+The plugin is saved to your account. It then works in chat on the web, desktop and mobile apps, in Cowork tasks, and in Claude Code when you sign in with the same account. To use it, ask Claude to use the Medici exploration method, or type `/medici` and choose **medici-exploration**. To get a newer version, select **Check for updates** on the marketplace, or keep **Sync automatically** on.
 
 If you can't add a marketplace from GitHub, use **Add > Upload plugin** with `agent-medici-innovation-claude-plugin-v0.1.1.zip`. To add only the skill, open **Customize > Skills**, select **+ > Create skill > Upload a skill**, and choose `medici-exploration-claude-v0.1.1.zip`.
 

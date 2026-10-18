@@ -106,7 +106,7 @@
     "applies_to": "0.1.0 draft, before the host-guide revisions in 0.1.0 and the Cowork changes in 0.1.1"
   },
   "limits": [
-    "Claude.ai, Cowork and chat installs and use were not exercised; install paths and limits come from Anthropic documentation checked on 2026-10-18.",
+    "Desktop-app, Upload plugin and organization installs, and any run in chat or Cowork, were not exercised; those paths and limits come from Anthropic documentation checked on 2026-10-18.",
     "One forward-use run in Claude Code, on a 0.1.0 draft, using the same model family that prepared the edition, with no real user and no AskUserQuestion controls.",
     "No creative outcome, latency, user reading time or full token cost was measured."
   ],
@@ -132,5 +132,27 @@
     "SKILL.md gives the helper's full path as ${CLAUDE_SKILL_DIR}/scripts/draw_perspectives.py for Claude Code and Cowork, and its compatibility field names Cowork.",
     "Plugin and marketplace versions are 0.1.1; the plugin archive is renamed agent-medici-innovation-claude-plugin-v0.1.1.zip because it also installs in Claude.ai and Cowork.",
     "Shared method files, pools and both draw helpers are unchanged."
-  ]
+  ],
+  "account_install_test": {
+    "date": "2026-10-18",
+    "surface": "claude.ai in Chrome, Max plan",
+    "path": [
+      "Customize > Plugins",
+      "Add",
+      "Add marketplace",
+      "Add from repository",
+      "ThatCompany/agent-medici-innovation-skill",
+      "Sync",
+      "Agent medici innovation",
+      "Add"
+    ],
+    "sync_automatically_default": true,
+    "installed_version": "0.1.1",
+    "skills": 1,
+    "files": 13,
+    "chat_slash_menu_lists_skill": true,
+    "skill_run_in_chat": false,
+    "cowork_observed": false,
+    "claude_code_sync_observed": false
+  }
 }
