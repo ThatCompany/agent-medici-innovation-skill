@@ -7,7 +7,7 @@ Explore an idea or design decision through diverse perspectives, current evidenc
 | Edition | Status | Download |
 |---|---|---|
 | **Codex** | v0.1.0; structurally validated and screened on three synthetic saved scenarios | [Codex skill ZIP](https://github.com/ThatCompany/agent-medici-innovation-skill/releases/download/v0.1.0/medici-exploration-codex-v0.1.0.zip) |
-| **Claude** | v0.1.0 preview; passes Anthropic's skill validator and Claude Code's strict plugin validator; one forward-use run in Claude Code; Claude.ai upload not yet tried | [Claude skill ZIP](https://github.com/ThatCompany/agent-medici-innovation-skill/releases/download/claude-v0.1.0/medici-exploration-claude-v0.1.0.zip) (Claude.ai, Claude Desktop or Claude Code) · [Claude Code plugin ZIP](https://github.com/ThatCompany/agent-medici-innovation-skill/releases/download/claude-v0.1.0/agent-medici-innovation-claude-code-v0.1.0.zip) |
+| **Claude** | v0.1.1 preview; passes Anthropic's skill validator and Claude Code's strict plugin validator; one forward-use run in Claude Code; Cowork and chat not yet tried | [Install steps](#use-the-claude-edition) · [Claude skill ZIP](https://github.com/ThatCompany/agent-medici-innovation-skill/releases/download/claude-v0.1.1/medici-exploration-claude-v0.1.1.zip) · [Claude plugin ZIP](https://github.com/ThatCompany/agent-medici-innovation-skill/releases/download/claude-v0.1.1/agent-medici-innovation-claude-plugin-v0.1.1.zip) |
 
 [All releases and checksums](https://github.com/ThatCompany/agent-medici-innovation-skill/releases) · [Codex source](editions/codex/skills/medici-exploration/SKILL.md) · [Claude source](editions/claude/skills/medici-exploration/SKILL.md) · [Validation details](docs/validation.md) · [Claude validation](docs/validation-claude.md)
 
@@ -34,19 +34,49 @@ See [OpenAI's skill installation and discovery documentation](https://learn.chat
 
 ## Use the Claude edition
 
-**Claude Code plugin.** On Claude Code 2.1.275 or later, install from this repository in one step:
+Pick where you use Claude. Adding the plugin once on claude.ai or in the desktop app covers chat, Cowork and Claude Code.
+
+| Where you use Claude | Easiest install |
+|---|---|
+| Claude.ai, the desktop app (chat and Cowork), the mobile apps | **Customize > Plugins > Add > Add marketplace**, then enter `ThatCompany/agent-medici-innovation-skill` |
+| Claude Code (terminal, IDE, desktop Code tab) | Synced from your claude.ai account, or `/plugin install agent-medici-innovation --marketplace ThatCompany/agent-medici-innovation-skill` |
+| A whole Team or Enterprise organization | An Owner uploads the plugin ZIP in **Organization settings > Plugins & skills** |
+| Claude API or Agent SDK | The Skills API, or the Agent SDK's `plugins` option |
+
+### Claude.ai, the desktop app and Cowork
+
+1. Open **Customize > Plugins**.
+2. Select **Add > Add marketplace** and enter `ThatCompany/agent-medici-innovation-skill`.
+3. Find **agent-medici-innovation** in the list and add it.
+4. For chat, turn on **Code execution and file creation** in Settings > Capabilities.
+
+The plugin is saved to your account. It then works in chat on the web, desktop and mobile apps, in Cowork tasks, and in Claude Code when you sign in with the same account. To use it, ask Claude to use the Medici exploration method, or type `/` and choose it. To get a newer version, select **Check for updates** on the marketplace, or turn on **Sync automatically**.
+
+If you can't add a marketplace from GitHub, select **Add > Upload plugin** and choose the **Claude plugin ZIP**. To add only the skill, open **Customize > Skills**, select **+ > Create skill > Upload a skill**, and choose the **Claude skill ZIP**.
+
+### Claude Code
+
+If you already added the plugin on claude.ai, Claude Code 2.1.273 or later loads it at the next session start, signed in with the same account. Run `/reload-plugins` to load it right away. Otherwise, on Claude Code 2.1.275 or later:
 
 ```text
 /plugin install agent-medici-innovation --marketplace ThatCompany/agent-medici-innovation-skill
 ```
 
-On earlier releases, run `/plugin marketplace add ThatCompany/agent-medici-innovation-skill`, then `/plugin install agent-medici-innovation@medici-innovation`. Invoke it as `/agent-medici-innovation:medici-exploration`, or ask Claude to use the Medici exploration method. The plugin ZIP holds the same plugin with a local marketplace for offline installation; its README explains the steps.
+On earlier releases, run `/plugin marketplace add ThatCompany/agent-medici-innovation-skill`, then `/plugin install agent-medici-innovation@medici-innovation`. Invoke it as `/agent-medici-innovation:medici-exploration`, or ask Claude to use the Medici exploration method.
 
-**Claude.ai and Claude Desktop.** Turn on **Code execution and file creation** in Settings > Capabilities. Then upload the **Claude skill ZIP** under Customize > Skills. Chat usually cannot start separate agents, so the skill runs its perspectives one after another and labels them as simulated.
+Without GitHub access, extract the **Claude plugin ZIP** and follow its README, which uses the local marketplace inside it. For the skill alone, extract the `medici-exploration` folder from the **Claude skill ZIP** into `~/.claude/skills/` or a project's `.claude/skills/`, then invoke `/medici-exploration`.
 
-**Standalone Claude Code skill.** Extract the `medici-exploration` folder from the Claude skill ZIP into `~/.claude/skills/` or a project's `.claude/skills/`, then invoke `/medici-exploration`.
+### Team and Enterprise organizations
 
-In Claude Code the skill uses subagents for each role, `AskUserQuestion` for submitted questions, and WebSearch/WebFetch where they are allowed. Its draw helper runs with Python 3 or, as a fallback, Node.js 18.3 or later; both give the same selection for a given seed. [The Claude host guide](editions/claude/skills/medici-exploration/references/claude-hosts.md) lists every mapping and fallback.
+Cowork and Skills must be on for the organization. If members don't see **Add** on their Plugins page, an Owner has turned off member-added plugins in **Organization settings > Plugins & skills > Policy**. To give everyone the plugin, an Owner opens **Organization settings > Plugins & skills**, selects **Add > Upload a plugin** with the Claude plugin ZIP, and sets its **Default access** to available, installed by default or required. See [Manage plugins for your organization](https://claude.com/docs/plugins/admin).
+
+### Claude API and Agent SDK
+
+Upload the skill folder with the [Skills API](https://platform.claude.com/docs/en/build-with-claude/skills-guide) and use it with the code execution tool, or pass the extracted plugin folder to the Agent SDK's `plugins` option.
+
+### How it runs in each place
+
+In Claude Code and Cowork the skill starts a subagent for each role, asks submitted questions with `AskUserQuestion` where available, and uses WebSearch/WebFetch where they are allowed. Chat usually can't start separate agents, so there the skill runs its perspectives one after another and labels them as simulated. The draw helper runs with Python 3 or, as a fallback, Node.js 18.3 or later; both give the same selection for a given seed. [The Claude host guide](editions/claude/skills/medici-exploration/references/claude-hosts.md) lists every mapping and fallback.
 
 ## What the method preserves
 
