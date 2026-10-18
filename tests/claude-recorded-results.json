@@ -153,6 +153,13 @@
     "chat_slash_menu_lists_skill": true,
     "skill_run_in_chat": false,
     "cowork_observed": false,
-    "claude_code_sync_observed": false
+    "claude_code_sync_observed": false,
+    "desktop_app_downloaded": true,
+    "downloaded_skill_files_match_v0_1_1": true,
+    "auto_sync_picked_up_later_readme_change": true,
+    "downloaded_copy_validates_strict": true,
+    "cowork_refused_or_ignored_components": [],
+    "linux_helper_check": "python:3.12-slim, no network: recorded replay matched; fresh draw returned 3 families",
+    "cowork_inferred": true
   }
 }
