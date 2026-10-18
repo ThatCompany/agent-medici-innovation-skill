@@ -1,6 +1,50 @@
 # Agent Medici Innovation Skill
 
-Explore an idea or design decision through diverse perspectives, current evidence, independent facilitation, and small experiments. The method draws on the Medici Effect's cross-disciplinary connections and the activity-based reframing and prototyping discussed in *The Art of Innovation*.
+**Put your idea where disciplines collide, then test the best connection with one small experiment.**
+
+Ask an AI about an idea and you usually get the first plausible answer, shaped by however you happened to frame the question. New ideas rarely come from there. They tend to come from intersections: an operations engineer looking at a design problem, an ecologist looking at a pricing model, a teacher looking at an onboarding flow.
+
+The Medici exploration skill builds those intersections on purpose. It convenes a small panel for your question and draws its perspectives at random from a standing pool of 15 perspective families, from systems and economics to ecology, art and play. A separate facilitator keeps the process fair, and a researcher grounds the discussion in current evidence. Then the panel narrows to what you need: one recommended direction, the strongest objection to it, and the smallest experiment that would show whether it works.
+
+Use it on a product or feature idea, a code architecture choice, a strategy question, or any decision where a different framing could change what you do next. For a clear task with an obvious approach, the assistant simply gets on with it.
+
+## Why use it
+
+- **Angles you might not reach alone.** Every panel draws at least three of those families by lot, on top of the lead assistant's own view. The draw is recorded and can be replayed, so no one can quietly reroll it to suit a preferred answer.
+- **Independent thinking before discussion.** Each contributor commits to a position before seeing anyone else's, so the panel doesn't just echo the first voice. The facilitator then routes one targeted exchange on the most promising pairing or the biggest open question.
+- **Evidence, not just fluency.** A researcher looks for current sources, existing solutions and contrary findings. The final account labels what was observed, sourced, hypothesized or simulated.
+- **Dissent you can see.** Objections stay attributed and are sorted into evidence gaps, causal assumptions, scope differences or competing values. Nothing is settled by vote, and value questions are left for you to decide.
+- **A next step you can act on.** Every run ends with a recommendation, the result that would count against it, and a point at which to stop. You then choose what happens next: decide, run a reversible experiment, gather specific evidence, continue, or park it.
+- **Your purpose stays in charge.** Your original request and constraints carry through every step. When panelists have questions for you, they arrive as clear choices with room for your own answer, and optional ones never hold up the work.
+- **Bounded effort.** One focused exchange by default, an effort ceiling you can set, and no open-ended debate loops.
+
+## Where the method comes from
+
+- ***The Medici Effect*** by Frans Johansson argues that breakthrough ideas cluster where fields and cultures intersect, as they did when the Medici family brought artists, scientists, philosophers and architects together in Renaissance Florence. The skill recreates that intersection with a diverse panel drawn at random. It asks each perspective for a mechanism that could carry over from its own field, not a vague analogy.
+- ***The Art of Innovation*** by Tom Kelley of IDEO, with Jonathan Littman, shows how innovation starts from watching what people actually do and moves forward through quick, tangible prototypes rather than abstract debate. The skill reframes "things" as the activities and experiences people want. It asks contributors for concrete specimens such as a sketch, a decision rule or a sample interaction, and it ends with the smallest experiment worth running.
+
+## How a run works
+
+1. **Brief.** The facilitator captures your request, your constraints and what's still open, and asks only what would change the next step.
+2. **Draw.** At least three perspective families are drawn from the pool, with a receipt that can be replayed.
+3. **Commit.** Each contributor independently proposes a framing, a concrete specimen, its strongest objection and a test.
+4. **Exchange.** The facilitator routes one promising pairing or uncertainty for a targeted reply.
+5. **Synthesize.** You get the recommended direction, the connection behind it, the decisive evidence, the strongest dissent and the smallest useful test.
+6. **Decide.** Panel questions and next-step choices come to you, each with a free-text option.
+
+Where the host allows it, as in Claude Code, Cowork and Codex, each role runs as its own subagent. In chat, the skill works through the perspectives in turn and labels them as simulated.
+
+## What to expect
+
+This is a structured way to widen your thinking and then narrow it to a testable step. It doesn't guarantee a better answer than a single capable assistant, and it tells you when extra perspectives added nothing new. [Validation details](docs/validation.md) describe what has actually been checked.
+
+```text
+Use the Medici exploration method on this idea: [idea].
+
+Explore whether we should [decision]. Keep [constraint] fixed. Keep the effort small.
+
+Run a two-panel Medici exploration on [question] with fresh participants.
+```
 
 ## Choose an edition
 
