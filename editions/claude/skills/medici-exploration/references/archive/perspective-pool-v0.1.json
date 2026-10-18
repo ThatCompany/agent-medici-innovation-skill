@@ -1,0 +1,121 @@
+{
+  "version": "0.1",
+  "minimum_pool_perspectives": 3,
+  "policy": "Sample distinct families with equal opportunity, in addition to the orchestrator's own perspective. This provisional pool is a coverage floor, not a representative sample of all possible viewpoints. Questions are investigative methods, not simulated evidence or required conclusions.",
+  "families": [
+    {
+      "id": "use-context",
+      "name": "Actual use, accessibility, and excluded users",
+      "questions": [
+        "Whose circumstances or abilities could make the proposed approach fail, and what actual observation would expose that?",
+        "What changes when the user is interrupted, unfamiliar with the subject, or unable to follow the expected path?"
+      ]
+    },
+    {
+      "id": "behavior-incentives",
+      "name": "Behavior, incentives, and adaptation",
+      "questions": [
+        "What behavior does the proposal reward, and how could people or agents adapt in an unintended way?",
+        "What would someone optimize if measured by the proposed success criterion?"
+      ]
+    },
+    {
+      "id": "systems-feedback",
+      "name": "Systems, dependencies, and feedback",
+      "questions": [
+        "Which interactions, feedback loops, or delayed effects could reverse the local benefit?",
+        "Where does this proposal move the problem rather than resolve it?"
+      ]
+    },
+    {
+      "id": "evidence-causality",
+      "name": "Evidence, uncertainty, and causal tests",
+      "questions": [
+        "Which claim is carrying the decision, what supports it, and what observation would count against it?",
+        "Could a different explanation produce the same apparent success?"
+      ]
+    },
+    {
+      "id": "economics-resources",
+      "name": "Economics, scarce resources, and opportunity cost",
+      "questions": [
+        "What alternative use of the same money, time, attention, or compute could produce more value?",
+        "Who pays the coordination and maintenance costs, and when does the benefit cease to justify them?"
+      ]
+    },
+    {
+      "id": "operations-recovery",
+      "name": "Operations, reliability, and recovery",
+      "questions": [
+        "What happens when a component is late, wrong, unavailable, or partially complete?",
+        "How would a user detect a failure and recover without losing useful work?"
+      ]
+    },
+    {
+      "id": "security-privacy",
+      "name": "Adversarial behavior, security, and privacy",
+      "questions": [
+        "How could an interested actor manipulate the inputs, selection rules, or interpretation of results?",
+        "What information or authority crosses a boundary, and is that necessary for the intended benefit?"
+      ]
+    },
+    {
+      "id": "power-governance",
+      "name": "Power, representation, and contestability",
+      "questions": [
+        "Who defines the problem, chooses participation, and decides what evidence counts?",
+        "Who bears the consequences, whose interests may be absent, and how can they challenge the decision?"
+      ]
+    },
+    {
+      "id": "learning-explanation",
+      "name": "Learning, explanation, and misunderstanding",
+      "questions": [
+        "What must the user understand to make a good choice, and how could apparent understanding be misleading?",
+        "What small interaction would reveal and repair a misunderstanding?"
+      ]
+    },
+    {
+      "id": "information-curation",
+      "name": "Information structure, curation, and provenance",
+      "questions": [
+        "What becomes visible or invisible through how information is grouped, ordered, summarized, or retrieved?",
+        "Can a reader trace a conclusion to its source and see what was omitted or transformed?"
+      ]
+    },
+    {
+      "id": "ecology-adaptation",
+      "name": "Ecology, variation, and resilience",
+      "questions": [
+        "Could preserving variation, redundancy, or a minority strategy improve adaptation when conditions change?",
+        "What selection pressure would remove a useful option too early?"
+      ],
+      "note": "Transfer a specific mechanism as a hypothesis; a biological analogy is not evidence that it applies here."
+    },
+    {
+      "id": "arts-play",
+      "name": "Art, play, narrative, and unexpected combinations",
+      "questions": [
+        "What unexpected juxtaposition or constraint could reveal a new way to experience the problem?",
+        "Can a sketch, story, improvisation, or playful variation expose something a formal description conceals?"
+      ],
+      "note": "Explain how the connection changes behavior or the decision; evocative novelty alone is insufficient."
+    },
+    {
+      "id": "subtraction-framing",
+      "name": "Subtraction, alternative framings, and doing nothing",
+      "questions": [
+        "What if the assumed need for this system, feature, or technology is mistaken?",
+        "What simpler, manual, existing, or no-change approach would address the underlying need?"
+      ]
+    },
+    {
+      "id": "time-reversibility",
+      "name": "Time, path dependence, and reversibility",
+      "questions": [
+        "How does the choice change after repeated use, accumulated commitments, or a change in circumstances?",
+        "What can be tried reversibly now, and what future options would this decision close?"
+      ]
+    }
+  ]
+}

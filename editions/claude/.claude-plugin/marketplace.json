@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "medici-innovation",
+  "description": "Local marketplace for an extracted copy of the Agent Medici Innovation plugin.",
+  "owner": {
+    "name": "ThatCompany"
+  },
+  "plugins": [
+    {
+      "name": "agent-medici-innovation",
+      "source": "./",
+      "description": "Explore ideas, code projects and design decisions through independently facilitated, randomly drawn perspectives, current evidence and small experiments.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "homepage": "https://github.com/ThatCompany/agent-medici-innovation-skill",
+      "license": "MIT"
+    }
+  ]
+}

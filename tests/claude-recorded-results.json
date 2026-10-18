@@ -1,0 +1,125 @@
+{
+  "edition": "claude",
+  "version": "0.1.0",
+  "date": "2026-10-18",
+  "status": "preview",
+  "base_edition": {
+    "edition": "codex",
+    "version": "0.1.0",
+    "shared_files_identical": [
+      "references/archive/perspective-pool-v0.1.json",
+      "references/facilitator-charter.md",
+      "references/multi-panel.md",
+      "references/participant-guide.md",
+      "references/perspective-pool.json",
+      "references/research-and-practice.md",
+      "scripts/draw_perspectives.py"
+    ]
+  },
+  "official_local_validator": {
+    "tool": "Anthropic skill-creator quick_validate.py",
+    "validator_sha256": "67cf5703402013936c8fb75ad6a1afecd8841d45cc5e606b634eb05825fde365",
+    "validator_modified": false,
+    "passed": true,
+    "message": "Skill is valid!",
+    "checked": [
+      "source folder",
+      "folder extracted from medici-exploration-claude-v0.1.0.zip"
+    ],
+    "skill_sha256": "b6575b25998668e46fdd741f13788d9a01519af3fc6d1d938e4f9962dfb0d049"
+  },
+  "validator_dependency": "PyYAML 6.0.3; development-only",
+  "claude_code_validator": {
+    "claude_code_version": "2.1.299",
+    "commands": [
+      "claude plugin validate editions/claude/.claude-plugin/plugin.json --strict",
+      "claude plugin validate . --strict",
+      "claude plugin validate editions/claude/.claude-plugin/marketplace.json --strict"
+    ],
+    "also_checked_after_extraction": true,
+    "passed": true
+  },
+  "plugin_details": {
+    "skills": [
+      "medici-exploration"
+    ],
+    "always_on_tokens_estimate": 59,
+    "on_invoke_tokens_estimate": 3200
+  },
+  "discovery": {
+    "headless_skill_listing": "agent-medici-innovation:medici-exploration",
+    "headless_run_completed": false,
+    "reason": "The bundled command-line client was not signed in; shared CLI logins are not changed on this machine."
+  },
+  "draw_helper_equivalence": {
+    "replay_cases": 301,
+    "counts_covered": [
+      3,
+      15
+    ],
+    "includes_non_ascii_perspective": true,
+    "includes_archived_pool_v0_1": true,
+    "byte_identical_receipts": true,
+    "invalid_input_cases": 8,
+    "exit_codes_match": true
+  },
+  "forward_use_run": {
+    "host": "Claude Code 2.1.299, Windows 11; coordinator run as a general-purpose subagent",
+    "scenario": "Fictional closed hypothetical: a five-person team's weekly planning meeting runs over time; small ceiling, one exchange, single panel; no user reachable.",
+    "drawn_family_ids": [
+      "use-context",
+      "economics-resources",
+      "power-governance"
+    ],
+    "pool_sha256_verified": true,
+    "seats": 6,
+    "agent_calls": 5,
+    "send_message_calls": 3,
+    "separate_facilitator": true,
+    "independent_initial_commitments": true,
+    "routed_exchanges": 1,
+    "objections_with_dispositions": 8,
+    "authored_notes_preserved_verbatim": 3,
+    "submitted_questions_presented": 5,
+    "question_mode": "text fallback ending in Other; all optional and pending",
+    "invented_answers": 0,
+    "departures": [
+      "Contributors started before the facilitator saw the draw receipt, to fit an eight-call cap.",
+      "Only one contributor confronted the researcher's solution landscape.",
+      "Contributors were not offered the synthesis to append corrections.",
+      "The researcher worked from the packet before the facilitator's intake check."
+    ],
+    "host_guide_changes_after_run": [
+      "Roles report only to the coordinator and do not message other agents.",
+      "Continuing roles with SendMessage: load if deferred, wait for notifications, treat duplicate reports as one.",
+      "Facilitator checks the packet and contributor prompts before dispatch where the ceiling allows.",
+      "Merge facilitator turns under small ceilings; never drop a drawn seat or the separate facilitator.",
+      "Windows interpreter order and absolute helper path.",
+      "Researcher scope for closed hypotheticals."
+    ],
+    "revised_guide_rerun": false,
+    "tokens_counted": {
+      "coordinator": 153775,
+      "facilitator": 109008,
+      "other_subagents": "not totaled"
+    }
+  },
+  "limits": [
+    "Claude.ai upload and chat use were not exercised; the upload path and frontmatter limits come from Anthropic documentation.",
+    "One forward-use run in Claude Code, using the same model family that prepared the edition, with no real user and no AskUserQuestion controls.",
+    "The forward-use run preceded the final host-guide revisions.",
+    "No creative outcome, latency, user reading time or full token cost was measured."
+  ],
+  "skill_files": {
+    "SKILL.md": "b6575b25998668e46fdd741f13788d9a01519af3fc6d1d938e4f9962dfb0d049",
+    "references/archive/perspective-pool-v0.1.json": "e5171c3d439bc6f96b17759cd60b01592b5611544291d551c7bdf4544e1a0d6f",
+    "references/claude-hosts.md": "2054ed4e1144bf4756f72a3a5f1ee19c544a14353621068551466ee05c3fcfc6",
+    "references/facilitator-charter.md": "a600851ffc1bd442a62b8da0f9c695482155074115b9279f375cbed502f37d75",
+    "references/multi-panel.md": "48610918b029408504e5f174fb17dc38f0c7271c8d03c2c443058dfb817c6274",
+    "references/participant-guide.md": "a81139b5bc46ae2579c502b849c8998c8aba13e0eab41903fb1bdfcaa5c70dff",
+    "references/perspective-pool.json": "7b6262ff7c73b84825054011556fe06171f34dd2ba1090641fbc9e5c415af077",
+    "references/research-and-practice.md": "e2e7d403cbbcf29aedfc395d1b9bba481be7a00e580d4ee606423f081ac4bdad",
+    "scripts/draw_perspectives.mjs": "2c354ad47da82f49d09fe9e428352059fc6d2d2fc5312783bdef4d33a69d2ce4",
+    "scripts/draw_perspectives.py": "334df87d390e0598197457e98ceb65bd038302254afa583dbef2e7d28bdd6f7e"
+  }
+}

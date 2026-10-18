@@ -1,0 +1,147 @@
+{
+  "version": "0.2",
+  "minimum_pool_perspectives": 3,
+  "policy": "Sample distinct families with equal opportunity, in addition to the orchestrator's own perspective. This provisional pool is a coverage floor, not a representative sample of all possible viewpoints. Questions are investigative methods, not simulated evidence or required conclusions.",
+  "families": [
+    {
+      "id": "use-context",
+      "name": "Actual use, accessibility, and excluded users",
+      "questions": [
+        "Whose circumstances or abilities could make the proposed approach fail, and what actual observation would expose that?",
+        "What changes when the user is interrupted, unfamiliar with the subject, or unable to follow the expected path?"
+      ],
+      "constructive_question": "What change suggested by an overlooked use context could make the intended activity possible for more people?"
+    },
+    {
+      "id": "behavior-incentives",
+      "name": "Behavior, incentives, and adaptation",
+      "questions": [
+        "What behavior does the proposal reward, and how could people or agents adapt in an unintended way?",
+        "What would someone optimize if measured by the proposed success criterion?"
+      ],
+      "constructive_question": "What feedback or incentive mechanism could encourage the desired activity without relying on perfect compliance?"
+    },
+    {
+      "id": "systems-feedback",
+      "name": "Systems, dependencies, and feedback",
+      "questions": [
+        "Which interactions, feedback loops, or delayed effects could reverse the local benefit?",
+        "Where does this proposal move the problem rather than resolve it?"
+      ],
+      "constructive_question": "What mechanism could produce the intended effect, and what dependency or practical limit bounds it?"
+    },
+    {
+      "id": "evidence-causality",
+      "name": "Evidence, uncertainty, and causal tests",
+      "questions": [
+        "Which claim is carrying the decision, what supports it, and what observation would count against it?",
+        "Could a different explanation produce the same apparent success?"
+      ],
+      "constructive_question": "What small comparison or measurement could reveal a promising mechanism or distinguish competing explanations?"
+    },
+    {
+      "id": "economics-resources",
+      "name": "Economics, scarce resources, and opportunity cost",
+      "questions": [
+        "What alternative use of the same money, time, attention, or compute could produce more value?",
+        "Who pays the coordination and maintenance costs, and when does the benefit cease to justify them?"
+      ],
+      "constructive_question": "What alternative allocation or reuse of existing resources could accomplish the intended activity with greater value?"
+    },
+    {
+      "id": "operations-recovery",
+      "name": "Operations, reliability, and recovery",
+      "questions": [
+        "What happens when a component is late, wrong, unavailable, or partially complete?",
+        "How would a user detect a failure and recover without losing useful work?"
+      ],
+      "constructive_question": "What recovery or fallback mechanism from another setting could help useful work continue through failure?"
+    },
+    {
+      "id": "security-privacy",
+      "name": "Adversarial behavior, security, and privacy",
+      "questions": [
+        "How could an interested actor manipulate the inputs, selection rules, or interpretation of results?",
+        "What information or authority crosses a boundary, and is that necessary for the intended benefit?"
+      ],
+      "constructive_question": "What design could preserve the intended benefit while reducing the information, access, or trust it requires?"
+    },
+    {
+      "id": "power-governance",
+      "name": "Power, representation, and contestability",
+      "questions": [
+        "Who defines the problem, chooses participation, and decides what evidence counts?",
+        "Who bears the consequences, whose interests may be absent, and how can they challenge the decision?"
+      ],
+      "constructive_question": "What participation or challenge mechanism could give affected people meaningful influence over the decision?"
+    },
+    {
+      "id": "learning-explanation",
+      "name": "Learning, explanation, and misunderstanding",
+      "questions": [
+        "What must the user understand to make a good choice, and how could apparent understanding be misleading?",
+        "What small interaction would reveal and repair a misunderstanding?"
+      ],
+      "constructive_question": "What interaction could help someone build understanding by trying, predicting, or explaining the next step?"
+    },
+    {
+      "id": "information-curation",
+      "name": "Information structure, curation, and provenance",
+      "questions": [
+        "What becomes visible or invisible through how information is grouped, ordered, summarized, or retrieved?",
+        "Can a reader trace a conclusion to its source and see what was omitted or transformed?"
+      ],
+      "constructive_question": "What different arrangement or juxtaposition of information could reveal a useful relationship while preserving provenance?"
+    },
+    {
+      "id": "ecology-adaptation",
+      "name": "Ecology, variation, and resilience",
+      "questions": [
+        "Could preserving variation, redundancy, or a minority strategy improve adaptation when conditions change?",
+        "What selection pressure would remove a useful option too early?"
+      ],
+      "note": "Transfer a specific mechanism as a hypothesis; a biological analogy is not evidence that it applies here.",
+      "constructive_question": "What mechanism for preserving variation or adapting to changing conditions could suggest a testable alternative?"
+    },
+    {
+      "id": "arts-play",
+      "name": "Art, play, narrative, and unexpected combinations",
+      "questions": [
+        "What unexpected juxtaposition or constraint could reveal a new way to experience the problem?",
+        "Can a sketch, story, improvisation, or playful variation expose something a formal description conceals?"
+      ],
+      "note": "Explain how the connection changes behavior or the decision; evocative novelty alone is insufficient.",
+      "constructive_question": "What unfamiliar combination or expressive constraint could produce a concrete alternative experience worth trying?"
+    },
+    {
+      "id": "subtraction-framing",
+      "name": "Subtraction, alternative framings, and doing nothing",
+      "questions": [
+        "What if the assumed need for this system, feature, or technology is mistaken?",
+        "What simpler, manual, existing, or no-change approach would address the underlying need?"
+      ],
+      "constructive_question": "Remove the proposed system: what existing practice could perform its essential activities, and what specimen would reveal its limits?"
+    },
+    {
+      "id": "time-reversibility",
+      "name": "Time, path dependence, and reversibility",
+      "questions": [
+        "How does the choice change after repeated use, accumulated commitments, or a change in circumstances?",
+        "What can be tried reversibly now, and what future options would this decision close?"
+      ],
+      "constructive_question": "What reversible step could teach us something now while preserving useful future options?"
+    },
+    {
+      "id": "values-meaning",
+      "name": "Values, meaning, and desired experience",
+      "questions": [
+        "What makes this outcome worth pursuing for the people involved, and what valued experience could optimizing the stated goal erase?",
+        "What choice, observation, or first-person account would distinguish competing interpretations of what people want?"
+      ],
+      "constructive_question": "What alternative could preserve or enrich a valued experience such as belonging, dignity, care, enjoyment, or expression?",
+      "note": "Use actual statements and observations where available; simulated preferences are hypotheses, not evidence of what people value."
+    }
+  ],
+  "previous_version": "archive/perspective-pool-v0.1.json",
+  "revision_reason": "Ken agreed to add values and meaning and to give every family a constructive prompt alongside its challenge questions."
+}
