@@ -58,6 +58,19 @@ def main():
         write_archive(plugin, plugin_entries)
         built.append(plugin)
 
+    claude_manifest_path = edition / ".claude-plugin/plugin.json"
+    if claude_manifest_path.is_file():
+        manifest = json.loads(claude_manifest_path.read_text(encoding="utf-8"))
+        assert manifest["version"] == args.version, "Claude plugin manifest version mismatch"
+        assert manifest["license"] == "MIT"
+        root = manifest["name"] + "/"
+        plugin = output / f"{manifest['name']}-claude-code-v{args.version}.zip"
+        plugin_entries = {root + path.relative_to(edition).as_posix(): path for path in edition.rglob("*")
+                          if path.is_file() and "__pycache__" not in path.parts and path.suffix != ".pyc"}
+        plugin_entries[root + "LICENSE"] = license_path
+        write_archive(plugin, plugin_entries)
+        built.append(plugin)
+
     checksums = output / "SHA256SUMS.txt"
     checksums.write_text("".join(
         hashlib.sha256(path.read_bytes()).hexdigest() + "  " + path.name + "\n"

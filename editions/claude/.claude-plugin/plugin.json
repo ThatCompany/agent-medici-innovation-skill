@@ -1,0 +1,13 @@
+{
+  "name": "agent-medici-innovation",
+  "version": "0.1.0",
+  "description": "Explore ideas, code projects and design decisions through independently facilitated, randomly drawn perspectives, current evidence and small experiments. Claude edition.",
+  "author": {
+    "name": "ThatCompany",
+    "url": "https://github.com/ThatCompany"
+  },
+  "homepage": "https://github.com/ThatCompany/agent-medici-innovation-skill",
+  "repository": "https://github.com/ThatCompany/agent-medici-innovation-skill",
+  "license": "MIT",
+  "keywords": ["innovation", "ideation", "design-decisions", "perspectives", "facilitation"]
+}
