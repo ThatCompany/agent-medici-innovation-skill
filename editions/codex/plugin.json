@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agent-medici-innovation",
+  "version": "0.1.0",
+  "description": "Explore ideas through independently facilitated diverse perspectives, current evidence, and small experiments. Tested in Codex.",
+  "author": {
+    "name": "ThatCompany",
+    "url": "https://github.com/ThatCompany"
+  },
+  "homepage": "https://github.com/ThatCompany/agent-medici-innovation-skill",
+  "repository": "https://github.com/ThatCompany/agent-medici-innovation-skill",
+  "license": "MIT"
+}

@@ -1,0 +1,63 @@
+{
+  "edition": "codex",
+  "version": "0.1.0",
+  "date": "2026-10-18",
+  "official_local_validator": {
+    "validator_sha256": "6068513d924ed3559e186dfcdead7439129828dcf402167fd925c06dffbf2806",
+    "validator_modified": false,
+    "passed": true,
+    "message": "Skill is valid!",
+    "skill_sha256": "5a2f30a65035b6e96b401c676b64f901ce172d1fd7ce19940b12c99cdb607871"
+  },
+  "validator_dependency": "PyYAML 6.0.3; development-only",
+  "behavioral_screen": {
+    "current": {
+      "applicable_checks": 18,
+      "passed": 18,
+      "cases": 3
+    },
+    "draft": {
+      "applicable_checks": 18,
+      "passed": 18,
+      "cases": 3
+    }
+  },
+  "submission_preservation": {
+    "case_note_sets_exact": 6,
+    "submitted_question_controls_exact": 4,
+    "notes_per_version": 5,
+    "submitted_questions_per_version": 2
+  },
+  "text_counts": {
+    "current": {
+      "entrypoint_words": 3498,
+      "all_markdown_instruction_words": 4597,
+      "self_reported_loaded_instruction_words": 4597,
+      "output_words": 1376
+    },
+    "draft": {
+      "entrypoint_words": 1730,
+      "all_markdown_instruction_words": 3409,
+      "self_reported_loaded_instruction_words": 2843,
+      "output_words": 1378
+    }
+  },
+  "critical_regressions": [],
+  "limits": [
+    "One synthetic saved-record exercise per version, with three cases and one blinded assessor using the same inherited model family/settings.",
+    "This checks resumption and closing behavior; it does not test fresh panel assembly, live retrieval, facilitator resistance to steering or actual UI capture end to end.",
+    "Version identity was hidden from the assessor, but content can still reveal stylistic clues; no technical isolation is claimed.",
+    "No real token/cost/latency, user reading time, creative discovery quality or outcome efficacy was measured.",
+    "Instruction and output words are descriptive counts, not a runtime-efficiency estimate."
+  ],
+  "skill_files": {
+    "SKILL.md": "5a2f30a65035b6e96b401c676b64f901ce172d1fd7ce19940b12c99cdb607871",
+    "references/facilitator-charter.md": "a600851ffc1bd442a62b8da0f9c695482155074115b9279f375cbed502f37d75",
+    "references/multi-panel.md": "48610918b029408504e5f174fb17dc38f0c7271c8d03c2c443058dfb817c6274",
+    "references/participant-guide.md": "a81139b5bc46ae2579c502b849c8998c8aba13e0eab41903fb1bdfcaa5c70dff",
+    "references/perspective-pool.json": "7b6262ff7c73b84825054011556fe06171f34dd2ba1090641fbc9e5c415af077",
+    "references/research-and-practice.md": "e2e7d403cbbcf29aedfc395d1b9bba481be7a00e580d4ee606423f081ac4bdad",
+    "scripts/draw_perspectives.py": "334df87d390e0598197457e98ceb65bd038302254afa583dbef2e7d28bdd6f7e",
+    "references/archive/perspective-pool-v0.1.json": "e5171c3d439bc6f96b17759cd60b01592b5611544291d551c7bdf4544e1a0d6f"
+  }
+}

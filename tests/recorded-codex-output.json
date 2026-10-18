@@ -1,0 +1,138 @@
+{
+  "cases": [
+    {
+      "case_id": "C1",
+      "process_actions": [
+        "Close the saved round without redrawing, reopening intake or adding debate.",
+        "Correct S1 against DOC1; preserve original contributions and exchange. No author revision or renewed assent is available.",
+        "Check attribution, objections and constraints against originals; a fresh F1 check is unavailable.",
+        "Deliver notes in seat order, the submitted question and an optional overall checkpoint."
+      ],
+      "user_facing_text": "Coordinator's recommendation: retain two local sketches for comparison, but correct the LinkBoard sketch before treating it as a booking option. DOC1, the supplied fictional LinkBoard manual v2, says anonymous links display availability; enforcing reservations requires a named account, and a shared display cannot lock a slot. This supersedes S1. The no-names/no-accounts constraint therefore rules out LinkBoard-enforced reservations. This finding concerns this synthetic product capability, not every conceivable anonymous booking mechanism.\n\nC1-L2's preserved exchange connects A and B by making enforceability the branching condition. Keep the paper-token/visible-board proposal B as a feasible hypothesis under DOC1, subject to somebody maintaining it. Retain A only as an availability-display sketch unless a different, compliant mechanism is later supported. C1-L3's objection to anonymous enforcement is adopted; visible override authority remains a design consideration, not an established solution. C1-L1's concern about remote bookings consuming walk-up capacity remains unresolved: each sketch must show how the reserve survives competing claims. C1-L2's objection also remains: paper tokens offer no established remote arrival certainty.\n\nThe smallest useful later test is a tabletop comparison of an arrival, a simultaneous claim and a departure/reset, preserving walk-up capacity without identities. Record conflicting promises, update effort and who may override. A reservation claim without an enforceable anonymous mechanism disconfirms that sketch's booking promise; repeated stale status challenges the board's usefulness. Stop after those scenarios and retain unresolved differences. No sketch, observation or test was newly performed. The three saved contributions and exchange are synthetic records, and no visitor preferences were observed. This round closes with possibilities and optional pending choices, without a product commitment.",
+      "authored_notes": [
+        {
+          "author": "C1-L2",
+          "text": "Keep paper tokens available if anonymous reservations cannot be enforced. A tabletop collision test can compare the two sketches without collecting names or contacting volunteers."
+        },
+        {
+          "author": "C1-L3",
+          "text": "Do not convert a display link into a promise of reservation control. Keep the disputed assumption visible when choosing the next sketch."
+        }
+      ],
+      "question_controls": [
+        {
+          "author": "C1-L3",
+          "question": "Which tradeoff should the next local sketch examine?",
+          "options": [
+            "Walk-up access",
+            "Advance booking certainty",
+            "Keep both open"
+          ],
+          "free_text": true,
+          "next_action": "Choose the focus of a later tabletop sketch.",
+          "answer_required": false,
+          "status": "pending"
+        },
+        {
+          "author": "Coordinator",
+          "question": "How would you like to leave this exploration?",
+          "options": [
+            "Retain both sketches for a later decision",
+            "Plan a reversible tabletop comparison",
+            "Gather evidence for another anonymous booking mechanism",
+            "Consider a separately bounded continuation",
+            "Park or stop here"
+          ],
+          "free_text": true,
+          "next_action": "Record a future direction; close the present round now.",
+          "answer_required": false,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "case_id": "C2",
+      "process_actions": [
+        "Resume the brief without another interview; check common evidence and preserve original commitments.",
+        "Retain C2-L3's incomplete arts-play seat. Recovery is exhausted; do not substitute or invent its position.",
+        "Deliver a partial coordinator comparison; no completed exchange, panel synthesis or fresh facilitator check exists.",
+        "Preserve the note and provide an optional closing choice; no contributor questions were submitted."
+      ],
+      "user_facing_text": "Useful partial findings are available today. Coordinator's recommendation is to keep the physical free/busy board with a clear reset step as a simple candidate, and retain the open invitation alongside it as a separate experience question. DOC2, the supplied fictional workshop operating note, establishes that a volunteer can update a physical board without visitor sign-in. It does not establish timely updates, successful wayfinding or visitor comfort.\n\nC2-L1's proposal D depends on noticing departures; its stale-status objection remains unresolved. C2-L2's proposal E adds a possible welcome mechanism but depends on visitors feeling comfortable asking. Its concern that a faster display might diminish conversation is an unknown value and causal assumption, not an observed preference. My comparison leaves both mechanisms visible; it is not a peer exchange or either author's revised agreement. There is no evidence here that adding the invitation improves the board.\n\nA smallest later check would walk through one occupied station becoming free, one missed reset and one visitor who does not ask for help. Record whether the display corrects itself, whether somebody can identify a station without conversation and what volunteer effort that requires. Persistent wrong status would challenge D; an invitation that requires asking would not resolve E's accessibility dependency. Stop after those scenarios and preserve remaining uncertainty rather than installing software. No walkthrough or interview occurred here.\n\nOnly two of three planned standing-family contributions are present. C2-L3, the arts-play seat, supplied no brief, note, objection or assent; its perspective remains missing. No exchange or completed panel synthesis exists. The user's partial-result instruction permits this delivery, but the planned panel coverage remains unsatisfied. No new independent review was possible. Today's findings close at that explicit limit, with no contribution recovery or continuation silently scheduled.",
+      "authored_notes": [
+        {
+          "author": "C2-L2",
+          "text": "A welcoming conversation might matter alongside finding a free bench. That value is unknown here; preserve it as a possibility rather than an observed visitor preference."
+        }
+      ],
+      "question_controls": [
+        {
+          "author": "Coordinator",
+          "question": "What should happen after these partial findings?",
+          "options": [
+            "Retain the board and invitation as alternatives",
+            "Plan a reversible reset-and-arrival walkthrough",
+            "Gather evidence on status accuracy and welcoming experience",
+            "Consider a later bounded continuation if the missing seat becomes available",
+            "Park or stop with the partial account"
+          ],
+          "free_text": true,
+          "next_action": "Record a future direction without blocking partial delivery; recovery is unavailable here.",
+          "answer_required": false,
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "case_id": "C3",
+      "process_actions": [
+        "Compare committed accounts, preserving facilitators, sources and six fixed synthetic seats; no fresh verified draw occurred.",
+        "Separate causal uncertainties from value choices; retain unresolved objections without voting on priorities.",
+        "Check representation against both originals; fresh FA and FB checks are unavailable.",
+        "Deliver a joint checkpoint, notes in panel/seat order, the submitted question and an overall next-action control."
+      ],
+      "user_facing_text": "Coordinator's recommendation is a comparison that keeps spontaneous access and advance certainty open. Panel A favors a physical board and walk-up reserve when spontaneous entry is the test focus. Panel B favors comparing anonymous time tokens with a physical board, retaining walk-up capacity, when advance certainty is the focus. Neither account supplies evidence for choosing that priority or proves an improvement.\n\nTheir useful difference is mechanism: a board communicates present status, while tokens attempt to allocate future access. The coordinator's proposed comparison would include the unchanged walk-up process as a baseline, alongside the board and tokens. This combines the accounts for assessment; it is not a new author revision or cross-panel consensus. Every candidate retains walk-up access and avoids names and accounts. Token allocation, recovery from lost tokens and protection of the reserve remain hypotheses requiring explanation.\n\nC3-A2's remote-arrival objection is unresolved and decisive if advance certainty is prioritized: present availability cannot guarantee availability on arrival. C3-B3's objection about token maintenance is also unresolved; no burden observations establish that the addition is worthwhile. Neither objection can be settled by voting. The priority difference concerns user values; token reliability and maintenance concern mechanisms and evidence.\n\nA smallest later tabletop comparison would apply the same simultaneous walk-up/advance claim, late arrival and reset scenarios to all three candidates. Record denied walk-ups, unsupported arrival promises, recovery steps and volunteer effort. Failure to protect the reserve disconfirms a candidate under the stated constraint; tokens with no certainty gain and additional work lack a demonstrated advantage. Stop after these scenarios without aggregating unlike benefits into a winner while priorities remain open. No test was performed.\n\nThe saved panels committed separately before seeing each other's accounts, but they share the same closed packet and investigators. That is source concentration, not independent corroboration. No observed priorities or outcomes are supplied, and no fresh facilitator checks occurred. This joint comparison closes the authorized exploration; all choices remain optional and pending.",
+      "authored_notes": [
+        {
+          "author": "C3-A2",
+          "text": "Keep the remote-arrival limitation visible. A physical board and advance certainty solve different activities; neither priority has been settled by the user."
+        },
+        {
+          "author": "C3-B3",
+          "text": "Retain the unchanged walk-up process as a comparator. Token maintenance is a cost to test, not an automatically worthwhile addition."
+        }
+      ],
+      "question_controls": [
+        {
+          "author": "C3-A2",
+          "question": "What would you like the next tabletop comparison to stress?",
+          "options": [
+            "Spontaneous walk-up access",
+            "Advance arrival certainty",
+            "Leave priorities open"
+          ],
+          "free_text": true,
+          "next_action": "Select a focus for a later local comparison.",
+          "answer_required": false,
+          "status": "pending"
+        },
+        {
+          "author": "Coordinator",
+          "question": "Which next direction would you like to retain?",
+          "options": [
+            "Keep alternatives open for a later decision",
+            "Plan a reversible three-way tabletop comparison",
+            "Gather evidence on arrival certainty and volunteer burden",
+            "Consider a separately bounded continuation around one uncertainty",
+            "Park or stop without a winner"
+          ],
+          "free_text": true,
+          "next_action": "Record a future direction; no further panel or implementation occurs within this fixture.",
+          "answer_required": false,
+          "status": "pending"
+        }
+      ]
+    }
+  ],
+  "scope": "Recorded synthetic fixture output, not live user evidence."
+}

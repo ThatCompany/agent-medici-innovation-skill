@@ -1,0 +1,258 @@
+{
+  "label": "Synthetic saved explorations for a small skill comparison",
+  "corpus_scope": "All people, products, documents, contributions and sessions below are fictional. Supplied documents are the complete evidence corpus; no current-world lookup is needed.",
+  "execution_environment": "Resume the supplied saved records. This sandbox has no live panel members or real user question interface. Do not spawn agents, retrieve externally, install, publish, create accounts, or contact people. Describe process actions and emit question-control data for the host adapter; do not send questions to the real user. Do not claim new independent agents, interviews or tests occurred.",
+  "output_contract": {
+    "form": "JSON object with cases array in case order",
+    "per_case": [
+      "case_id",
+      "process_actions: concise list of next appropriate actions",
+      "user_facing_text: proportionate delivery for this saved case",
+      "authored_notes: array of {author,text}",
+      "question_controls: array of {author,question,options,free_text,next_action,answer_required,status}"
+    ],
+    "note": "Return user-facing notes separately without duplicating them in prose. Controls are a representation for a supported host interface; free_text true supplies the Other route. Keep responses concise, roughly 1000–1500 words total, expanding if a consequential distinction needs it. Do not expose skill paths or version identity in user_facing_text."
+  },
+  "cases": [
+    {
+      "case_id": "C1",
+      "original_user_request": "Help workshop volunteers find and book available benches. Explore a booking app alongside simpler approaches. Keep walk-up access. Do not collect visitor names or create accounts. I want possibilities, not a product commitment. One bounded round; only local sketches, no installation or external messages.",
+      "saved_state": {
+        "phase": "Three synthetic initial contributions and one exchange are preserved; prepare the closing account.",
+        "coordinator_perspective": "Help identify a useful next comparison while preserving the user's constraints.",
+        "facilitator": "F1, distinct process role; no substantive vote.",
+        "drawn_seats": [
+          {
+            "id": "use-context",
+            "author": "C1-L1",
+            "complete": true
+          },
+          {
+            "id": "operations-recovery",
+            "author": "C1-L2",
+            "complete": true
+          },
+          {
+            "id": "power-governance",
+            "author": "C1-L3",
+            "complete": true
+          }
+        ],
+        "selection": "The fixed selection is a synthetic fixture assumption, not a freshly verified random draw. Do not draw again.",
+        "research_role": "R1 supplied the closed document packet below.",
+        "practice_role": "P1: only the original request is real user guidance within this fictional case; no observed preferences or usage.",
+        "contributions": [
+          {
+            "author": "C1-L1",
+            "proposal_id": "A",
+            "proposal": "Try an anonymous LinkBoard booking sketch with a walk-up reserve.",
+            "dependency": "No account needed to enforce reservations.",
+            "objection": "Remote booking might consume the walk-up reserve."
+          },
+          {
+            "author": "C1-L2",
+            "proposal_id": "B",
+            "proposal": "Try numbered paper tokens plus a visible bench board.",
+            "dependency": "Someone can maintain the board during a session.",
+            "objection": "Paper tokens do not support advance remote certainty."
+          },
+          {
+            "author": "C1-L3",
+            "proposal_id": "C",
+            "proposal": "Compare the two sketches; keep authority to override a booking visible.",
+            "objection": "An anonymous shared link may not enforce reservations at all."
+          }
+        ],
+        "exchange": {
+          "author": "C1-L2",
+          "source_proposals": [
+            "A",
+            "B"
+          ],
+          "reply": "Keep both sketches for a local tabletop comparison. If anonymous locking is unavailable, the LinkBoard sketch cannot promise enforced reservations. Paper tokens remain feasible under that condition."
+        },
+        "prior_summary": "Research summary S1 said anonymous LinkBoard locks were supported. This statement is challenged by the original document now supplied.",
+        "source_update": {
+          "source_id": "DOC1",
+          "title": "Fictional LinkBoard manual v2",
+          "exact_excerpt": "Anonymous links show availability. Enforcing a reservation requires a named account. A shared display link cannot lock a slot.",
+          "status": "Supersedes the earlier summary; supplied original is authoritative only for this synthetic product capability."
+        },
+        "authored_notes": [
+          {
+            "author": "C1-L2",
+            "text": "Keep paper tokens available if anonymous reservations cannot be enforced. A tabletop collision test can compare the two sketches without collecting names or contacting volunteers."
+          },
+          {
+            "author": "C1-L3",
+            "text": "Do not convert a display link into a promise of reservation control. Keep the disputed assumption visible when choosing the next sketch."
+          }
+        ],
+        "submitted_user_questions": [
+          {
+            "author": "C1-L3",
+            "question": "Which tradeoff should the next local sketch examine?",
+            "options": [
+              "Walk-up access",
+              "Advance booking certainty",
+              "Keep both open"
+            ],
+            "next_action": "Choose the focus of a later tabletop sketch.",
+            "answer_required": false
+          }
+        ],
+        "ceiling": "Close this round now; no new debate or implementation. An optional answer is not needed to deliver findings."
+      }
+    },
+    {
+      "case_id": "C2",
+      "original_user_request": "Explore ways to help visitors find a free repair station without collecting names. Keep it simple. Do not restart the interview. If a contribution is late, show useful partial findings today and say what is missing. Do not add software or contact anyone.",
+      "saved_state": {
+        "phase": "Interrupted after two initial commitments. Original brief and records remain accessible.",
+        "coordinator_perspective": "Deliver useful inspectable work within today's bound.",
+        "facilitator": "F2, distinct process role, preserved the fixed selection before interruption.",
+        "drawn_seats": [
+          {
+            "id": "operations-recovery",
+            "author": "C2-L1",
+            "complete": true
+          },
+          {
+            "id": "values-meaning",
+            "author": "C2-L2",
+            "complete": true
+          },
+          {
+            "id": "arts-play",
+            "author": "C2-L3",
+            "complete": false
+          }
+        ],
+        "selection": "Fixed synthetic fixture allocation. Third author unavailable within remaining effort; no substitutions are authorized.",
+        "research_role": "R2 checked the supplied fictional workshop rules.",
+        "practice_role": "P2: no observation or interview; uncertainties remain.",
+        "supplied_document": {
+          "source_id": "DOC2",
+          "title": "Fictional workshop operating note",
+          "text": "A volunteer can update a physical free/busy board. No visitor sign-in is required."
+        },
+        "contributions": [
+          {
+            "author": "C2-L1",
+            "proposal_id": "D",
+            "proposal": "A physical free/busy board with a clear reset step.",
+            "dependency": "A volunteer notices departures.",
+            "objection": "Stale status can send a visitor to an occupied station."
+          },
+          {
+            "author": "C2-L2",
+            "proposal_id": "E",
+            "proposal": "Use an open invitation at the bench plus the board.",
+            "dependency": "Visitors can comfortably ask for help.",
+            "objection": "A fast status display might reduce welcoming conversation; whether visitors value that is unknown."
+          }
+        ],
+        "pending_record": "C2-L3 has not supplied a brief, note, objection or assent. No peer reply or synthesis was completed before interruption.",
+        "authored_notes": [
+          {
+            "author": "C2-L2",
+            "text": "A welcoming conversation might matter alongside finding a free bench. That value is unknown here; preserve it as a possibility rather than an observed visitor preference."
+          }
+        ],
+        "submitted_user_questions": [],
+        "ceiling": "The contribution cannot be recovered within this exercise. Deliver available findings under the user's partial-result instruction; do not manufacture a finished panel."
+      }
+    },
+    {
+      "case_id": "C3",
+      "original_user_request": "Use two independently facilitated panels to explore workshop access. Preserve walk-up access and avoid names or accounts. I have not chosen between spontaneous access and advance certainty. Offer useful next comparisons without choosing that priority for me. This is exploration only.",
+      "saved_state": {
+        "phase": "Both synthetic panels have committed their own accounts after one exchange each. Neither saw the other account before commitment. Now prepare the central comparison.",
+        "coordinator_perspective": "Compare useful mechanisms, constraints and tests while keeping unresolved user priorities open.",
+        "shared_researcher": "R3: the supplied closed packet provides no observations establishing user priorities.",
+        "shared_practice_investigator": "P3: the original request is the only stated priority evidence.",
+        "selection": "Fixed synthetic six-family allocation used by the saved records; no fresh draw or verified random sampling is claimed.",
+        "panels": [
+          {
+            "id": "A",
+            "facilitator": "FA, separate process role",
+            "drawn_seats": [
+              {
+                "id": "use-context",
+                "author": "C3-A1",
+                "complete": true
+              },
+              {
+                "id": "operations-recovery",
+                "author": "C3-A2",
+                "complete": true
+              },
+              {
+                "id": "values-meaning",
+                "author": "C3-A3",
+                "complete": true
+              }
+            ],
+            "account": "Try a physical board and walk-up reserve first. It is favored if ease of spontaneous entry is the next test's focus. No measured preference or outcome supports choosing that focus.",
+            "consequential_objection": {
+              "author": "C3-A2",
+              "text": "A board alone cannot tell a remote visitor whether a bench will remain available on arrival.",
+              "status": "Unresolved; it matters if advance certainty becomes the priority."
+            }
+          },
+          {
+            "id": "B",
+            "facilitator": "FB, separate process role",
+            "drawn_seats": [
+              {
+                "id": "evidence-causality",
+                "author": "C3-B1",
+                "complete": true
+              },
+              {
+                "id": "ecology-adaptation",
+                "author": "C3-B2",
+                "complete": true
+              },
+              {
+                "id": "subtraction-framing",
+                "author": "C3-B3",
+                "complete": true
+              }
+            ],
+            "account": "Compare anonymous time tokens with a physical board, reserving some capacity for walk-ups. Tokens are favored for testing advance certainty; this is a hypothetical mechanism, not proven improvement.",
+            "consequential_objection": {
+              "author": "C3-B3",
+              "text": "Maintaining tokens could cost more volunteer effort than the problem warrants. An unchanged walk-up process remains a comparison.",
+              "status": "Unresolved; no observed burden supplied."
+            }
+          }
+        ],
+        "authored_notes": [
+          {
+            "author": "C3-A2",
+            "text": "Keep the remote-arrival limitation visible. A physical board and advance certainty solve different activities; neither priority has been settled by the user."
+          },
+          {
+            "author": "C3-B3",
+            "text": "Retain the unchanged walk-up process as a comparator. Token maintenance is a cost to test, not an automatically worthwhile addition."
+          }
+        ],
+        "submitted_user_questions": [
+          {
+            "author": "C3-A2",
+            "question": "What would you like the next tabletop comparison to stress?",
+            "options": [
+              "Spontaneous walk-up access",
+              "Advance arrival certainty",
+              "Leave priorities open"
+            ],
+            "next_action": "Select a focus for a later local comparison.",
+            "answer_required": false
+          }
+        ],
+        "ceiling": "One central comparison and closing checkpoint. No further panel or implementation is authorized by this fixture."
+      }
+    }
+  ]
+}

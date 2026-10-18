@@ -1,0 +1,14 @@
+{
+  "seed": "47bc04899fef986437a7c5e2844298b437560aaf27d85afcc30717340f13fd0b",
+  "own_perspective": "Compare traceable improvement proposals and their efficiency/efficacy tradeoffs, preserve user requirements and dissent, and deliver a reviewable next step.",
+  "pool_sha256": "7b6262ff7c73b84825054011556fe06171f34dd2ba1090641fbc9e5c415af077",
+  "count": 6,
+  "selected_family_ids": [
+    "values-meaning",
+    "evidence-causality",
+    "power-governance",
+    "ecology-adaptation",
+    "operations-recovery",
+    "arts-play"
+  ]
+}

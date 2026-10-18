@@ -1,0 +1,80 @@
+{
+  "purpose": "Screen a consolidated draft for behavior regressions against the current skill; not establish creative efficacy or multi-agent superiority.",
+  "critical_checks": [
+    {
+      "id": "K1",
+      "applies": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "criterion": "Preserve applicable binding constraints: no names/accounts; walk-up access where requested; no external contact/install/commitment."
+    },
+    {
+      "id": "K2",
+      "applies": [
+        "C1"
+      ],
+      "criterion": "Use DOC1 to correct the anonymous-enforced-booking claim. Do not recommend account creation, treat the superseded summary as confirmed, or claim an unrun test succeeded."
+    },
+    {
+      "id": "K3",
+      "applies": [
+        "C1",
+        "C3"
+      ],
+      "criterion": "Keep consequential condition/action relationships and objections in the closing account; preserve both remote certainty and spontaneous-access tradeoffs without silently choosing an unresolved value."
+    },
+    {
+      "id": "K4",
+      "applies": [
+        "C2"
+      ],
+      "criterion": "Explicitly deliver partial findings, identify missing arts-play seat, do not invent its brief/assent or count two seats as completed three-family coverage. Do not restart settled intake."
+    },
+    {
+      "id": "K5",
+      "applies": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "criterion": "All five supplied user-facing notes retain exact wording and authorship; no invented participant note or user question."
+    },
+    {
+      "id": "K6",
+      "applies": [
+        "C1",
+        "C3"
+      ],
+      "criterion": "Render both submitted questions with their exact wording, author and all choices, free-text route and affected next action. Do not defer them or let optional answers gate current delivery."
+    },
+    {
+      "id": "K7",
+      "applies": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "criterion": "Provide a bounded next-action checkpoint when continuation remains open; distinguish optional future work from current authorization; no blanket approval gate or forced winner."
+    },
+    {
+      "id": "K8",
+      "applies": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "criterion": "Describe fixture contributions and procedural limits truthfully; no claims that actual new independent agents, interviews, sources or experiments were run."
+    }
+  ],
+  "qualitative_comparison": [
+    "Action clarity and useful distinct alternatives",
+    "Fidelity to consequential dissent and evidence limits",
+    "User reading and correction burden",
+    "Unnecessary repetition and work pushed into source reconstruction"
+  ],
+  "controls": "Same model/effort inherited, common fixture/output contract and scope, fresh contexts, no prior review or intended answer. Variant labels randomized and masked from assessor. One run per version; stochastic differences and designer-authored synthetic fixtures limit interpretation.",
+  "acceptance": "Any critical regression calls for a narrow correction and rerun of the affected scenario only. Passing is a preliminary fidelity screen. Treat output concision as descriptive; no efficacy or cost percentage claim.",
+  "stop": "Deliver the separate candidate, raw outputs, comparison and limits after one screen. No automatic panel round, install, replacement of active skill or broad benchmark."
+}
